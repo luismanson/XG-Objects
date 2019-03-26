@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration APIVersion="1701.1">
+
+  <Services transactionid="">
+    <Name>DHCP</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>67:68</SourcePort>
+        <DestinationPort>67:68</DestinationPort>
+        <Protocol>UDP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+    <Services transactionid="">
+    <Name>DNS</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>53</DestinationPort>
+        <Protocol>UDP</Protocol>
+      </ServiceDetail>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>53</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+    <Services transactionid="">
+    <Name>LDAP</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>389</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+  <Services transactionid="">
+    <Name>NTP</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>123</DestinationPort>
+        <Protocol>UDP</Protocol>
+      </ServiceDetail>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>123</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+  <Services transactionid="">
+    <Name>SAMBA</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>139</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+  <Services transactionid="">
+    <Name>SMTP</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>25</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+  <Services transactionid="">
+    <Name>RPC - EPM</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>42</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+  <Services transactionid="">
+    <Name>Kerberos</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>88</DestinationPort>
+        <Protocol>UDP</Protocol>
+      </ServiceDetail>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>88</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+  <Services transactionid="">
+    <Name>SMB CIFS SMB2</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>445</DestinationPort>
+        <Protocol>UDP</Protocol>
+      </ServiceDetail>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>445</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+  <Services transactionid="">
+    <Name>SOAP</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>9389</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+  <Services transactionid="">
+    <Name>RPC DFSR (SYSVOL)</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>5722</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+  <Services transactionid="">
+    <Name>Kerberos change/set password</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>464</DestinationPort>
+        <Protocol>UDP</Protocol>
+      </ServiceDetail>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>464</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+  <Services transactionid="">
+    <Name>MADCAP</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>2535</DestinationPort>
+        <Protocol>UDP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+  <Services transactionid="">
+    <Name>WINS</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>42</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+  
+  <Services transactionid="">
+    <Name>NetBIOS Name resolution</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>137</DestinationPort>
+        <Protocol>UDP</Protocol>
+      </ServiceDetail>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>138</DestinationPort>
+        <Protocol>UDP</Protocol>
+      </ServiceDetail>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>137</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+  <Services transactionid="">
+    <Name>LDAP SSL</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>636</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+  <Services transactionid="">
+    <Name>LDAP GC</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>3268</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+  <Services transactionid="">
+    <Name>LDAP GC SSL</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>3269</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+  <Services transactionid="">
+    <Name>Replication RPC - EPM</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>135</DestinationPort>
+        <Protocol>UDP</Protocol>
+      </ServiceDetail>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>135</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+  <Services transactionid="">
+    <Name>LDAP udp</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>389</DestinationPort>
+        <Protocol>UDP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+  <Services transactionid="">
+    <Name>KMS</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>1688</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+  <Services transactionid="">
+    <Name>Active Directory High ports</Name>
+    <Type>TCPorUDP</Type>
+    <ServiceDetails>
+      <ServiceDetail>
+        <SourcePort>1:65535</SourcePort>
+        <DestinationPort>49152:65535</DestinationPort>
+        <Protocol>TCP</Protocol>
+      </ServiceDetail>
+    </ServiceDetails>
+  </Services>
+
+
+
+
+
+
+
+
+
+
+
+
+  <ServiceGroup transactionid="">
+    <Name>Domain Controller prtocols</Name>
+    <Description>Domain controller traffic</Description>
+    <ServiceList>
+      <Service>DHCP</Service>
+      <Service>DNS</Service>
+      <Service>LDAP</Service>
+      <Service>NTP</Service>
+      <Service>SAMBA</Service>
+      <Service>SMTP</Service>
+      <Service>RPC - EPM</Service>
+      <Service>Kerberos</Service>
+      <Service>SMB CIFS SMB2</Service>
+      <Service>SOAP</Service>
+      <Service>RPC DFSR (SYSVOL)</Service>
+      <Service>Kerberos change/set password</Service>
+      <Service>MADCAP</Service>
+      <Service>WINS</Service>
+      <Service>NetBIOS Name resolution</Service>
+      <Service>LDAP SSL</Service>
+      <Service>LDAP GC</Service>
+      <Service>LDAP GC SSL</Service>
+      <Service>Replication RPC - EPM</Service>
+      <Service>LDAP udp</Service>
+      <Service>KMS</Service>
+      <Service>Active Directory High ports</Service>
+    </ServiceList>
+  </ServiceGroup>
+</Configuration>
+
